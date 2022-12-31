@@ -39,6 +39,9 @@ RUN set -eux; \
 		opcache \
     ;
 
+# MySQL driver
+RUN docker-php-ext-install pdo pdo_mysql;
+
 ###> recipes ###
 ###< recipes ###
 
